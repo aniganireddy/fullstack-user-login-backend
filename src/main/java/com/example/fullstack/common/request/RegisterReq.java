@@ -1,6 +1,7 @@
 package com.example.fullstack.common.request;
 
 import com.example.fullstack.enums.Role;
+import com.example.fullstack.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,6 +15,6 @@ public class RegisterReq {
 
     private String userName;
     private String email;
-    private String password;
+    private String partyId;
 
 }
