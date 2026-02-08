@@ -34,6 +34,7 @@ public class UserService {
                         .partyId(user.getPartyId())
                         .userName(user.getUserName())
                         .email(user.getEmail())
+                        .userStatus(user.getStatus())
                         .build();
             }
 
