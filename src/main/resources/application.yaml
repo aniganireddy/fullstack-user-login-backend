@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: fullstack
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/full-stack
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/bank-realm-Anigani
+          jwk-set-uri: http://localhost:8080/realms/bank-realm-Anigani/protocol/openid-connect/certs
+
+server:
+  port: 9090
